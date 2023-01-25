@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    background-image: url(../images/wallpaper001.jpg);
+}
+
+div.quadro {
+    display: inline-block;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    background-color: bisque;
+}
+    /*diferentes formas de colocar um background em uma div*/
+div#q1{
+    background-color: skyblue;
+}
+div#q2{
+    background-image: linear-gradient(to top, yellow, aqua);
+}
+div#q3{
+    background-image: url(../images/pattern001.png);
+    /*por padrão a imagem vai se repetir para encher a div completamente*/
+}
+div#q4{
+    background-image: url(../images/wallpaper002.jpg);
+    /*imagens grandes também serão exibidas de forma errada*/
+}
