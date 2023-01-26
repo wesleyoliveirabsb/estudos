@@ -1,0 +1,9 @@
+body{
+    /*a background image pode obviamente ser apenas uma url de um site na internet, que até agora eu não utilizei*/
+    background-image: url(https://i.pinimg.com/originals/e4/34/2a/e4342a4e0e968344b75cf50cf1936c09.jpg);
+    /*background size também serve para definirmos o tamanho exato da imagem, caso contrário ela vem do tamanho padrão*/
+    background-size: 100px 100px;
+    /*por default o background repeat usa 'repeat' mas podemos mudar isso com esse atributo*/
+    background-repeat: no-repeat;
+    /*alem de no repeat também tem repeat-x e y que vai repetir no eixo x  e y respectivamente*/
+}

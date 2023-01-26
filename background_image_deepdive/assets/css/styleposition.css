@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+    max-width: 1000px;
+    margin: auto;
+}
+p{
+    color: white;
+}
+div.quadro{
+    background-image: url(../images/wallpaper003.jpg);
+    height: 200px;
+    border: 2px solid pink;
+    border-radius: 10px;
+    margin: 5px;
+}
+img{
+    display: block;
+    margin:auto;
+}
+
+#q1{
+    background-position:left top;
+}
+#q2{
+    background-position: left center;
+}
+#q3{
+    background-position: right bottom;
+}
+#q4{
+    background-position: center center;
+}
+

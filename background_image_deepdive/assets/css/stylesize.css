@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+    background-image: url(../images/wallpaper002.jpg);
+    background-position: center top;/*a pagina vai sempre ter o topo central do wallpaper em foco*/
+    background-repeat: no-repeat;/*importante pois o default tem repeat*/
+    background-size: cover;
+
+    /*contain força a imagem a ser 100% exibida no seu tamanho normal, a imagem não vai conter nenhum corte*/
+    
+    /*cover força a imagem a cobrir a tela inteira, mesmo que ela precise ser cortada para isso(eu gosto muito dessa porque o site fica mais responsivo)*/
+    
+    /*além de valores determinados em pixeis também é possível usar porcentagens(100% 100%) mas a imagem fica distorcendo, então não é recomendado*/
+    /*-------------------------------------------------------------------------------------------------------------------------------------*/
+    /*coloque (anotação) na tag que você não usar*/
+    background-attachment: scroll;
+    /*scroll é o valor padrão, ele vai vincular o background ao scroll do mouse, ou seja , ele vai mover junto com a roda do mouse*/
+    background-attachment: fixed;
+    /*o fixed, vai fixar o background ao fundo da tela, independente de movimento ou resolução ele vai continuar lá*/
+
+}
+/*todas essas configurações de background também tem uma shorhand, ela tem que ser criada na ordem de
+color > image > position > repeat > (size) > attachment
+ou seja: background: black url() center top cover fixed;*/
+main{
+    background-color: white;
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    border: 2px dotted blue;
+    border-radius: 10px;
+    
+}
