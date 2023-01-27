@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+}
+
+.image{
+    background-image: url(../images/target001.png);
+    background-size: 100% 100%;
+    position: absolute;
+    background-color: yellow;
+    width: 400px;
+    height: 200px;
+
+    left: 50%;
+    top: 50%;
+    /*a posição absoluta permite mexer no top e no left, preferencialmente usando porcentagens*/
+    transform: translate(-50%,-50%);
+    /*essa é uma das formas mais usadas para centralizar as coisas dentro de divs, usando posição absoluta*/
+
+    /*outra forma muito popular é usar o display flex:
+     display: flex; 
+     justify-content: center; --alinhamento horizontal
+     align-items: center; /  --alinhamento vertical
+    */
+}   
+.container{
+    background-image: url(../images/target001.png);
+    background-size: 100% 100%;
+    background-color: aqua;
+    height: 95vh;
+    padding: 10px;
+   
+}
