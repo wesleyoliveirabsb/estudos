@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudo de tabelas</title>
+    <style>
+        body{
+            background-color: rgb(156, 102, 35);
+        }
+        td{/*os estilos tem que ser colocados nos dados da tabela, em tr ou table podem sair algumas configurações indesejadas*/
+            border: 1px solid black;
+            padding: 5px;
+            width: 30px;
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse; /*isso ajuda a juntar as bordar e dar uma aparencia melhor a tabela*/
+        }
+    </style>
+</head>
+<body>
+    <p>]tabelas também são importantes para a criação de vários sites, por mais que seja uma coisa caindo em desuso, então nesse doc eu vou estudar um pouco sobre elas</p>
+    <p>meu objetivo é fazer essa tabela usando html</p>
+    <img src="assets/simple_table.png" alt="">
+    <p>a hierarquia das tabelas simples segue da seguinte forma:
+        table = a tabela
+        table row &lt;tr&gt;= uma linha da tabela 
+        table data &lt;td&gt; = os dados dentro dessa linha da tabela
+    </p>
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>
