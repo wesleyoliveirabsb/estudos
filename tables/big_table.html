@@ -16,15 +16,31 @@
         }
         td, th{
             border: 1px solid black;
-            padding: 5px;
+            padding: 5px;   
         }
         thead{
             background-color: grey;
             color: white;
         }
+        caption{
+            font-weight: bold;
+            padding: 5px;
+            color: white;
+            background-color: black;
+        }
+        tbody > tr:nth-child(2n){/*de 2 em 2 ele bota a cor, também podemos usar even e odd, assim como várias outras possibilidades*/
+            background-color: grey;
+        }
     </style>
 </head>
 <body>
+    <p>menu de tabelas</p>
+    <ul>
+        <li><a href="tables.html">tabelas normais</a></li>
+        <li><a href="scope.html">scope</a></li>
+        <li><a href="zebrado.html">nth-child</a></li>
+    </ul>
+    </a>
     <h1>uso de tabelas grandes</h1>
     <p>tabelas grandes, por recomendação da w3c, precisam de uma estrutura diferente e mais semântica do que tabelas pequenas</p>
     <h3>a hierarquia de uma tabela pequena como visto anteriormente é simples 
@@ -38,6 +54,7 @@
     <p>mas ao trabalhar com tabelas grandes precisamos mudar um pouco a hierarquia sendo assim:</p>
     <pre><code>
         table
+            caption = é o titulo da tabela
             thead 
                 tr, td, th 
             tbody 
@@ -45,13 +62,15 @@
             tfoot 
                 tr, td, th 
     </code></pre>
+    <p>âmbos caption, e o tfoot, podem ser colocados em qualquer lugar da hierarquia mas no produto final elees sempre vão estar no lugar</p>
     <p>utilizando os metodos acima podemos chegar a resultados incríveis como a seguir:</p>
     <table>
+        <caption>super tabela legal</caption>
         <thead>
             <tr>
-                <th>estado</th>
-                <th>população</th>
-                <th>% da população total</th>
+                <th scope="col">estado</th>
+                <th scope="col" style="width: 20%;">população</th>
+                <th scope="col" style="width: 10%;">% da população total</th>
             </tr>
         </thead>
         <tbody>
@@ -78,7 +97,7 @@
         </tbody>
         <tfoot>
             <tr>    
-                <th>total de habitantes</th>
+                <th scope="row">total de habitantes</th>
                 <td>0000</td>
             </tr>
         </tfoot>
@@ -86,5 +105,7 @@
 
     <p>apesar das recomendações cobrirem apenas tabelas grandes, nada impede de usar as mesmas coisas com tabelas pequenas</p>
     
+    <p>qual a diferença entre th e td?</p>
+    <p>td se refere a dados, th se refere a titulos</p>
 </body>
 </html>
