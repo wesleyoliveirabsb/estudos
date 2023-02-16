@@ -14,12 +14,17 @@
             padding: 5px;
             width: 30px;
             text-align: center;
+            vertical-align: middle;/*uma propriedade exclusiva do td que ajuda no alinhamento vertical das celulas, o padrão é middle, também existem top e bottom*/  
         }
         table{
             width: 400px;
             height: 400px;
             border-collapse: collapse; /*isso ajuda a juntar as bordar e dar uma aparencia melhor a tabela*/
             border: 5px solid blue;
+        }
+        .numero{
+            /*os numeros normalmente não são alinhados como em uma página de excel então é necessária a criação de uma classe para tomar essa função*/
+            text-align: right;  
         }
         tr.linha{
             background-color: gray;
@@ -41,7 +46,7 @@
     <table>
         <tr>
             <td>A1</td>
-            <td>B1</td>
+            <td class="numero">B1</td>
             <td>C1</td>
         </tr>
         <tr class="linha">
@@ -50,7 +55,7 @@
             <td>C2      
         <tr>
             <td>A3</td>
-            <td>B3</td>
+            <td class="numero">B3</td>
             <td>C3</td>
         </tr>
         <tr>

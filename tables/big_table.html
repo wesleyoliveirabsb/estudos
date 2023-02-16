@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando tabelas grandes</title>
+    <style>
+        body{
+            background-color: bisque;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        thead{
+            background-color: grey;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>uso de tabelas grandes</h1>
+    <p>tabelas grandes, por recomendação da w3c, precisam de uma estrutura diferente e mais semântica do que tabelas pequenas</p>
+    <h3>a hierarquia de uma tabela pequena como visto anteriormente é simples 
+    <pre><code>
+        table
+            table row ou tr 
+                table header 
+                table data 
+    </code>
+    </pre></h3>
+    <p>mas ao trabalhar com tabelas grandes precisamos mudar um pouco a hierarquia sendo assim:</p>
+    <pre><code>
+        table
+            thead 
+                tr, td, th 
+            tbody 
+                tr, td, th 
+            tfoot 
+                tr, td, th 
+    </code></pre>
+    <p>utilizando os metodos acima podemos chegar a resultados incríveis como a seguir:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>estado</th>
+                <th>população</th>
+                <th>% da população total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>são paulo</td>
+                <td>41 262 199</td>
+                <td>22,2%</td>
+            </tr>
+            <tr>
+                <td>minas gerais</td>
+                <td>19 597 330</td>
+                <td>10,0%</td>
+            </tr>
+            <tr>
+                <td>rio de janeiro</td>
+                <td>15 989 929</td>
+                <td>8,0%</td>
+            </tr>
+            <tr>
+                <td>bahia</td>
+                <td>14 016 906</td>
+                <td>7,1%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>    
+                <th>total de habitantes</th>
+                <td>0000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>apesar das recomendações cobrirem apenas tabelas grandes, nada impede de usar as mesmas coisas com tabelas pequenas</p>
+    
+</body>
+</html>
