@@ -13,6 +13,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
@@ -30,6 +31,11 @@
         }
         tbody > tr:nth-child(2n){/*de 2 em 2 ele bota a cor, também podemos usar even e odd, assim como várias outras possibilidades*/
             background-color: grey;
+        }
+        thead > tr >th{ /*configuração essencial para fixar o cabeçalho*/
+            position: sticky;
+            top: 0;
+            background-color: black;
         }
     </style>
 </head>
@@ -94,6 +100,111 @@
                 <td>14 016 906</td>
                 <td>7,1%</td>
             </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14 016 906</td>
+                <td>7,1%</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>10 444 526</td>
+                <td>5,7%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>10 693 929</td>
+                <td>5,3%</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>8 796 448</td>
+                <td>4,4%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>8 452 381</td>
+                <td>4,3%</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>7 581 051</td>
+                <td>4,1%</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>6 248 436</td>
+                <td>3,7%</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td>6 003 788</td>
+                <td>3,3%</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td>6 574 789</td>
+                <td>3,3%</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td>3 514 952</td>
+                <td>1,9%</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td>3 766 528</td>
+                <td>1,9%</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>3 483 985</td>
+                <td>1,9%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td>3 035 122</td>
+                <td>1,8%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>3 168 027</td>
+                <td>1,6%</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td>3 118 360</td>
+                <td>1,6%</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td>3 120 494</td>
+                <td>1,5%</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td>2,923,369</td>
+                <td>1,4%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td>2 449 024</td>
+                <td>1,4%</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td>3 118 360</td>
+                <td>1,6%</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td>2 068 017</td>
+                <td>1,1%</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td>1 562 409</td>
+                <td>0,8%</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>    
@@ -105,7 +216,8 @@
 
     <p>apesar das recomendações cobrirem apenas tabelas grandes, nada impede de usar as mesmas coisas com tabelas pequenas</p>
     
-    <p>qual a diferença entre th e td?</p>
+    <h2>qual a diferença entre th e td?</h2>
     <p>td se refere a dados, th se refere a titulos</p>
+    
 </body>
 </html>
