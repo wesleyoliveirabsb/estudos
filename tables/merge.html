@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        span{
+            font-family: monospace;
+            font-size: 12px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        td{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>A mesclagem é sempre importante e é usada em muitas tabelas</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td> <!-- colspan siginifica que essa celular vai ser expandida em 2-->
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            
+            <td colspan="2">H</td>
+            <td rowspan="2">I</td>
+        </tr>
+        <tr>
+            
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+    <p>para as mesclagens apresentadas acimas utilizamos o colspan e o row span. </p>
+    <p>colspan é usada para mesclar colunas e rowspan é usada para mesclar linhas, apos a propriedade temos que colocar quantas celulas serão mescladas colo o exemplo </p>
+
+    <h2><pre><code> colspan="2" <span>para a mesclagem de colunas</span>
+                    rowspan="3" <span>para a mesclagem de linhas</span>
+    </code></pre></h2>
+</body>
+</html>
