@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>agrupando colunas</h1>
+    <p>é fácil agrupar linhas e aplicar o css desejado apenas selecionando o tr, mas como selecionamos colunas inteiras?</p>
+    <h3>colgroup</h3>
+    <p>para agruparmos uma coluna utilizaremos o colgroup, uma tag nova adicionada no html5 utilizada para agruparmos colunas.</p>
+    <p>para isso vamos adicionar um &lt;colgroup&gt; e um &lt;col&gt; para&lt;cada coluna que existe na tabela como no exemplo a seguir</p>
+    <p>
+        <pre>
+            &lt;colgroup&gt;
+                &lt;col&gt;
+                &lt;col&gt;
+                &lt;col&gt;
+                &lt;col&gt;
+            &lt;/colgroup&gt;
+        </pre>
+    </p>
+    <p>essa tag deve ser colocada dentro da tag &lt;table&gt;
+        dessa forma cada &lt;col&gt; dentro dela representa uma coluna, assim podemos facilmente aplicar class e id para cada uma delas
+    </p>
+    <p>também podemos adicionar um &lt;span&gt; para indicar que a tag representa duas colunas ou mais</p>
+
+    <pre>
+        &lt;colgroup&gt;
+                &lt;col&gt;
+                &lt;col&gt;
+                &lt;col span="2"&gt;
+            &lt;/colgroup&gt;
+    </pre>
+</body>
+</html>
