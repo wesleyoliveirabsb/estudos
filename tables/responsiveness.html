@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        div#tabela{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas responsiveis</h1>
+    <p>responsividade é um dos pilares do HTML, e é muito importante saber como tornar as tabelas responsivas, afinal como desenvolvedores, criaremos sites que aparecerão em todo tipo de tabela</p>
+    <p>abaixo temos um exemplo de tabela que ficaria muito longa em uma tela menor</p>
+    <table>
+        <caption>Tabelas responsivas</caption>
+        <thead>
+            <th>Produto</th>
+            <th>Jan</th>
+            <th>Fev</th>
+            <th>Mar</th>
+            <th>Abr</th>
+            <th>Mai</th>
+            <th>Jun</th>
+            <th>Jul</th>
+            <th>Ago</th>
+            <th>Set</th>
+            <th>Out</th>
+            <th>Nov</th>
+            <th>Dez</th>
+        </thead>
+        <tbody>
+            <td>TV 40''</td>
+            <td>01</td>
+            <td>04</td>
+            <td>01</td>
+            <td>05</td>
+            <td>13</td>
+            <td>06</td>
+            <td>01</td>
+            <td>00</td>
+            <td>06</td>
+            <td>05</td>
+            <td>04</td>
+            <td>16</td>
+        </tbody>
+    </table>
+    <h2>Tornando a tabela responsiva</h2>
+    <p>para tornar essa tabela responsiva, precisamos envolopar ela completamente uma uma &lt;div&gt; e vamo utilizar uma propriedade no style dessa div chamada de <code> overflow-x: ;</code> essa propriedade permite que modifiquemos a interação com o conteudo no eixo x(também podemos brincar com o eixo y usando o overflow-y)</p>
+    <div id="tabela">
+        <table>
+            <caption>Tabelas responsivas</caption>
+            <thead>
+                <th>Produto</th>
+                <th>Jan</th>
+                <th>Fev</th>
+                <th>Mar</th>
+                <th>Abr</th>
+                <th>Mai</th>
+                <th>Jun</th>
+                <th>Jul</th>
+                <th>Ago</th>
+                <th>Set</th>
+                <th>Out</th>
+                <th>Nov</th>
+                <th>Dez</th>
+            </thead>
+            <tbody>
+                <td>TV 40''</td>
+                <td>01</td>
+                <td>04</td>
+                <td>01</td>
+                <td>05</td>
+                <td>13</td>
+                <td>06</td>
+                <td>01</td>
+                <td>00</td>
+                <td>06</td>
+                <td>05</td>
+                <td>04</td>
+                <td>16</td>
+            </tbody>
+        </table>
+    </div>
+    <p>o atributo overflow-x com auto já é suficiente para criar esse efeito</p>
+    <p><code> style{
+        overflow-x: auto;
+                    }
+    </code></p>
+</body>
+</html>
