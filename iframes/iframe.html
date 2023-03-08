@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        iframe{
+            width: 300px;
+            height: 200px;
+        }
+    </style>
 </head>
 <body>
     <h1>O QUE É IFRAME?</h1>
@@ -12,10 +18,21 @@
     <h2>utilizando o iframe</h2>
     <p>acesse meu 
         
-        <iframe src="https://github.com/wesleyoliveirabsb" frameborder="0"></iframe>
+        <iframe src="https://github.com/wesleyoliveirabsb" frameborder="0" scrolling="no"> <a href="https://github.com/wesleyoliveirabsb"> github</a></iframe>
         
-        github</p>
+        onde se encontram os projetos</p>
     <p>o iframe cria uma nova instancia de navegador dentro de um site já aberto</p> 
-    <p>alguns sites possuem uma proteção contra iframes, como por exemplo o proprio  <iframe src="https://www.google.com.br" frameborder="0"></iframe> google</p>   
+    <p>alguns sites possuem uma proteção contra iframes, como por exemplo o proprio  <iframe src="https://www.google.com.br" frameborder="0"> <a href="https://www.google.com.br"></a></iframe> google</p> 
+    <p>hoje em dia a maioria dos sites usa essa proteção, mas não impede que a gente aprenda como usar</p>
+    <p> mas alguns sites
+        <iframe src="https://www.cursoemvideo.com/curso/html5-css3-modulo1/" frameborder="0"></iframe>
+        ainda permitem o uso livremente
+    </p>
+    <h2>Configuração do iframe</h2>
+    <p>por padrão o iframe tem 300x150 px, mas isso pode ser mudado facilmente alterando os valores dentro do proprio iframe, além de obviamente, ser possivel alterar tudo com CSS</p>
+    <h5>scrolling</h5>
+    <p>scrolling é o parametro de configuração da barra de rolagem de um iframe, pode ter os valores auto(o padrão), yes(vai forçar uma barra de rolagem), e no(que tira a rolagem por completo)</p>
+    <h5>frameborder</h5>
+    <p>é um parâmetro que vai dizer se existe ou não uma borda no iframe, aceita os valores, 0 e 1, sem borda e com borda respectivamente</p>
 </body>
 </html>

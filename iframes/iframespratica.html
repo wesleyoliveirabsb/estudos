@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uso de iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe{
+            width: 98vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>um exemplo pratico de um possivel uso de iframe</h1>
+    <h2>faça uma escolha</h2>
+    <p>O iframe também pode ser utilizado para carregar links que estão na pagina sem precisar sobrescrever a aba atual ou abrir uma nova aba</p>
+    <ul>
+        <li><a href="iframe.html" target="tela">Primeira Página</a></li>
+        <li><a href="iframelocal.html" target="tela">Segunda Página</a></li>
+    </ul>
+    <p>Para isso vamo dar um nome para o iframe utilizando o parâmetro ' name=" " ', depois de escolher o nome vamos adicionar esse objeto para o target do link como visto aqui</p>
+
+    <iframe src="" frameborder="0" name="tela">
+        <p>[Seu navegador não é compativel com isso]</p>
+    </iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe ab esse vero, libero animi dicta error, ducimus nulla ut porro ipsa odio quo in, sequi hic incidunt voluptatibus necessitatibus fugit.
+    Laborum, aliquid veritatis numquam ut, vel minima voluptatem, fugit perspiciatis nam odit nostrum culpa? Temporibus explicabo voluptate nesciunt inventore facere maxime! Dolor incidunt temporibus voluptas reprehenderit quos molestiae repellendus esse?</p>
+</body>
+</html>
