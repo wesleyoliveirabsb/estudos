@@ -29,8 +29,11 @@
     <iframe src="" frameborder="0" name="tela">
         <p>[Seu navegador não é compativel com isso]</p>
     </iframe>
+    
+    <p>O problema dessa forma é que o iframe se torna vazio se nenhum link for clicado, podemos resolver isso colocando um link base no iframe, mas também existe outra forma de resolver esse problema</p>
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe ab esse vero, libero animi dicta error, ducimus nulla ut porro ipsa odio quo in, sequi hic incidunt voluptatibus necessitatibus fugit.
-    Laborum, aliquid veritatis numquam ut, vel minima voluptatem, fugit perspiciatis nam odit nostrum culpa? Temporibus explicabo voluptate nesciunt inventore facere maxime! Dolor incidunt temporibus voluptas reprehenderit quos molestiae repellendus esse?</p>
+    <h2>srcdoc</h2>
+    <p>usando o srcdoc no lugar de src, é possivel usar código html no iframe</p>
+    <iframe srcdoc="<h1>utilizando o srcdoc é possivel escrever o que quiser no iframe</h1> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam ratione error voluptatum fugit cupiditate iste quibusdam ad recusandae, esse culpa necessitatibus delectus et sit excepturi amet molestias fuga. Impedit, harum!</p> <img src='../tables/assets/simple_table.png'></iframe> "  frameborder="0"></iframe> <!-- é importante usar aspas simples dentro das aspas duplas-->
 </body>
 </html>

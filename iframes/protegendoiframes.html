@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Cadastre-se aqui</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            Nome:
+            <input type="text" name="nome" id="nome">
+            <input type="submit" value="cadastrar">
+        </p>
+    </form>
+
+    <h1>Formas de proteger o seu site</h1>
+    <p>como dito anteriormente outros sites podem usar o seu site para capturar informações do usuário</p>
+    <p>Vamos discutir como proteger um pouco melhor o seu site</p>
+    <h3>sandbox</h3>
+    <p>o sandbox bloqueia todo e qualquer acesso que outro site dentro iframe tentem fazer, como por exemplo cadastrar alguém no formulário acima</p>
+    <h3>referrerpolicy</h3>
+    <p> esse atributo vem com o valor padrão de "no-referer-when-downgrade", mas alterando isso para "no-referrer"</p>
+    <p>usando o no-referrer, você diz que o conteudo que está carregado dentro do iframe, não vai coletar nenhum tipo de informação do usuário</p>
+    <strong style="color: red;" >altamente recomendado</strong>
+    <h3>mas e se eu precisar de preencher o formulário em um site?</h3>
+    <p>existem vários valores para o sandbox que vai permitir as coisas, o sandbox="sandbox" cria a segurança máxima, mas você pode substituir esse valor sandbox por exemplo sandbox="allow-forms" que permite o uso de formulários, ou sandbox="allow-scripts" que permite o uso de scripts.</p>
+    <strong>mais de uma valor pode ser adicionado ao mesmo sandbox </strong>
+    <p>lembre-se que o sandbox vai permitir apenas o que você especificar, todas as outras coisas ainda estarão bloqueadas </p>
+</body>
+</html>
