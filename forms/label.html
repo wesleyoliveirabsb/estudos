@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando labels</title>
+</head>
+<body>
+    <h1>usando action</h1>
+    <h2>voltando aquele formulário simples</h2>
+    <form action="cadastro.php">
+        <p><label for="inome">nome:</label> <input type="text" name="nome" id="inome"></p>
+        <p>sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+    <p style="color: white; background-color: red;"> é normal dar erro pois no momento não temos o arquivo para esses dados serem enviados</p>
+    <p>como dito na primeira lição, esse é um formulário mas ainda não tem utilidade alguma</p>
+    <h3>dando utilidade aos formulários</h3>
+    <p>uma coisa simples e necessária em todos os formulários é, o local para onde os dados vão, normamelmente esses dados são mandados para alguma linguagem de programação, por enquanto utilizaremos PHP</p>
+    <p>para enviarmos os dados usaremos o "action" na tag &gt;form&lt; e isso vai ditar a ação que vai ser disparada ao clicarmos no botão de submit</p>
+    <h1>usando label</h1>
+    <h2>explicando a diferença entre name e id</h2>
+    <p>você deve ter notado que ao usar o input:text é criado um name e um id.</p>
+    <p>para a linguagem php funcionar direito, é necessário que todo input tenha um name, então esse nome é bem mais util para o html e o php, linguagens como o javascript o id é bem mais importante</p>
+    <h2>finalemente utilizando label</h2>
+    <p>ao envelopar o "nome" na tag &gt;label&lt; ele terá apenas um valor o valor 'for=""'. </p>
+    <p>dentro desse for vamos botar o id </p>
+    <p>e assim conseguimos relacional o label ao input que queremos, visualmente isso não muda nada, mas esse é um passo <STROng>EXTREMAMENTE</STROng>importante para a criação de formulários</p>
+    <p>a utlizidade do label é relacionar uma palavra a um objeto, isso facilita o uso nos celulares, e a acessibilidade nos sites</p>
+    <p><strong>USE SEMPRE O LABEL</strong></p>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando um formulário</title>
+</head>
+<body>
+    <h1>O primeiro formulário</h1>
+    <h2>Como criar um formulário?</h2>
+    <p>para criar um formulário da maneira mais básica possivel é preciso usar a tag &gt;forma&lt; existem também atributos importantissimos, mas essa é a forma mais simples</p>
+    <h4>exemplo de formulário</h4>
+    <form>
+        <p>nome: </p>
+        <p>sobrenome: </p>
+    </form>
+    <p>acima temos um formulário, mas ainda falta uma forma para preencher ele, para isso usamos a tag &gt;input&lt; essa tag possui, vários valores possiveis, mas por enquanto usaremos apenas o text </p>
+    <form >
+        <p>nome: <input type="text" name="nome" id="nome"></p>
+        <p>sobrenone: <input type="text" name="sobrenome" id="sobrenome"> </p>
+    </form>
+    <p>agora está melhor, mas ainda falta um botao para enviar esses dados. para isso usaremos o &gt;input&lt; mas dessa vez com o submit em vez de text</p>
+    <form >
+        <p>nome: <input type="text" name="nome" id="nome"></p>
+        <p>sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+        <p><input type="submit" value="Enviar"></p> <!-- o 'value' precisa ser alterado com o nome que queremos no botão-->
+    </form>
+    <h3>O formulário mais simples de todos</h3>
+    <p>e assim criamos o formulário mais simples de todos, ao apertar enviar ele não vai pra lugar nenhum ainda.
+    </p>
+    <p>outro ponto importante é que não existe ligação nenhuma entre nome e a caixinha logo a frente, ou seja, nada impede do meu nome ser 19 por exemplo</p>
+    <p>esse é um formulário, mas ele está bem longe de ser um formulário útil</p>
+</body>
+</html>
