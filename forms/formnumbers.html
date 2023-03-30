@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros</title>
+</head>
+<body>
+    <h1>formulários que usam números</h1>
+    <p>já aprendemos a usar um formulário simples com letras como o exemplo a seguir</p>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+    </form>
+    <p>esse formulário aceita letras e numeros, mas e se quisermos um formulário que aceite apenas números, como uma data ou uma nota?</p>
+    <p>para isso temos vários outros tipos de inputs que servem para coisas diferentes</p>
+    <h3>Number</h3>
+    <form action="cadastro.php">
+        <p>
+            <label for="imedia">média</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1">
+        </p>
+    </form>
+    <p>nesse tipo de input:numer podemos adicionar o elemento step, que indica o espaçamento entre incrementações, por exemplo <br>
+    um step de 0.5 vai aumentar o numero de 0.5 em 0.5 e um step de 2 aumenta o numero de 2 em 2</p>
+    <p>caso o step não seja definido ou você tente enviar um numero que está fora desse parametro o formulário não será enviado, por exemplo, se eu usar um step de 0.5 e tentar enviar um valor de 5,2, não será enviado</p>
+    <p>para definir o limite minino e máximo é necessário usar o atribbuto min e max</p>
+    <h3>Month</h3>
+    <form action="cadastro.php">
+        <p>
+            <label for="imes">mes</label>
+            <input type="month" name="mes" id="imes">
+        </p>
+    </form>
+    <p>esse label permite que o usuário selecione o mês e o ano que é necessário no formulário</p>
+    <h3>Date</h3>
+    <form action="cadastro.php">
+        <p>
+            <label for="idia">Dia</label>]
+            <input type="date" name="dia" id="idia" >
+        </p>
+    </form>
+    <p>similar ao input de month, esse input também serve para datas,mas de uma forma mais precisa, com dia, mês e ano</p>
+    <p>você já deve ter visto ele em alguns sites por ai</p>
+    <h3>Time</h3>
+    <form action="cadastro.php">
+        <p>
+            <label for="ihora">Hora</label>
+            <input type="time" name="time" id="itime">
+        </p>
+    </form>
+    <p>seguindo essa caminho de dias e horas, temos o input para horas, esse input permite horas no formato 24 horas</p>
+    <h1>VALUE</h1>
+    <p>TODOS esses inputs acima aceitam o elemento value, esse elemento serve para escolher um valor pré determinado para com campo como por exemplo</p>
+    <form action="cadastro.php">
+        <p>
+            <label for="imedia">média</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" value="5">
+        </p>
+    </form>
+    <form action="cadastro.php">
+        <p>
+            <label for="idia">Dia</label>]
+            <input type="date" name="dia" id="idia" value="2023-03-07">
+        </p>
+    </form>
+    <p>o value de date tem que ser no formato de yyy/mm/dd</p>
+    <form action="cadastro.php">
+        <p>
+            <label for="ihora">Hora</label>
+            <input type="time" name="time" id="itime" value="19:30">
+        </p>
+    </form>
+    <p>o value de time tem que ser no formato hh:mm</p>
+    <form action="cadastro.php">
+        <p>
+            <label for="imes">mes</label>
+            <input type="month" name="mes" id="imes" value="2023-03">
+        </p>
+    </form>
+    <p>o value de month tem que ser no formato yyyy-mm</p>
+</body>
+</html>
