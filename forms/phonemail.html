@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>telefone</title>
+</head>
+<body>
+    <h1>Inputs</h1>
+    <p>continuando a falar sobre os diferentes inputs dessa vez vamos falar do input para email</p>
+    <h4>e-mail</h4>
+    <p>muitos formulários precisam de um email</p>
+    <form action="cadastro.php" method="get" >
+        <p> 
+            <label for="iemail">E-mail</label>
+            <input type="email" name="email" id="iemail">
+        </p>
+    </form>
+    <p>esse formulário exige que o email seja validado pelo sistema</p>
+    <p>essa validação por hora é bem simples, ela checa apenas se o email tem um @ na composição</p>
+    <h3>Tel</h3>
+    <form action="cadastro.php">
+        <p>
+            <label for="itel">Telefone</label>
+            <input type="tel" name="tel" id="itel">
+        </p>
+    </form>
+    <p>da mesma forma que o email, a validação desse campo não é muito extensa inicialmente</p>
+    <p>para criar um campo que tem uma validação melhor é necessario estudar sobre, expressões regulares ou regEx</p>
+    <h3>agrupando os inputs</h3>
+    <p>existe uma tag que é usada para agrupar grupos de elementos, isso torna a legibilidade bem melhor, o nome dessa tag é &gt;fieldset&lt;</p>
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>dados pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required minlength="5" maxlength="20" placeholder="Digite seu nome">
+            </p>
+            <p>
+                <label for="imail">E-mail</label>
+                <input type="email" name="mail" id="imail" required minlength="10" placeholder="digite seu e-mail">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
