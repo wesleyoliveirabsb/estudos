@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkincheckinchekin</title>
+</head>
+<body>
+    <h1>Checkbox</h1>
+    <p>checkbox é um dos mais uteis e mais usados inputs, essas são aquelas "caixinhas" que o usuário pode marcar uma opção como no exemplo abaixo</p>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esbas" id="eesbas">Basquete
+            <input type="checkbox" name="esfut" id="eesfut"> Futebol
+            <input type="checkbox" name="esnat" id="eesnat">Natação
+            <input type="checkbox" name="esten" id="eesten">Tênis
+        </fieldset>
+    </form>
+    <p>é possivel tornar essa lista para a posição vertical usando &gt;br&lt; após cada opção</p>
+    <p>como você pode ter notado, só da pra selecionar uma opção se você clicar diretamente na caixa, o que não é um grande problema se tiver usando um computador pessoal, mas caso você use um celular esse se torna um problema maior</p>
+    <p>para resolver esse problemas usaremos o label, que já aprendemos a utilizar anteriormente</p>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label>
+            <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Natação</label>
+            <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis</label>
+        </fieldset>
+    </form>
+    <p>a mesma lista agora com label para facilitar o uso, parece bem mais natural né</p>
+    <h1>radio</h1>
+    <p>outro input bastante popular com uma função similar ao checkbox é o radio, também tem a funcionalidade de marcação do checkbox, mas dessa vez é limitado a apenas uma escolha</p>
+    <p>vamos criar uma e dessa vez vamos pré-aplicar o label</p>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexmas" id="esexmax"><label for="esexmax">Masculino</label>
+            <input type="radio" name="sexfem" id="esexfem"><label for="esexfem">Feminino</label>
+        </fieldset>
+    </form>
+    <p>como você pode ver dessa forma, você ainda pode marcar os 2 ao mesmo tempo, e não só isso, você também não pode desmarcar nenhum dos 2</p>
+    <h3>por que isso acontece?</h3>
+    <p>isso acontece porque o elemento name="#" está diferente nas duas opções de radio</p>
+    <code>
+        <pre>
+            &lt;input type="radio" <span style="color: red;">name="sexmas"</span> id="isexmax">&lt;label for="isexmax">Masculino</label>
+                    input type="radio" <span style="color: red;">name="sexfem"</span> id="isexfem">&lt;label for="isexfem">Feminino</label>
+        </pre>
+    </code>
+    <p>para o input radio funcionar direto é extremamente importante que as alternativas inclusas nesse rádio tenham o mesmo nome, dessa forma, se mudarmos o nome de ambas as opções para ficar igual teremos o seguinte resultado</p>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isexmax"><label for="isexmax" value="M">Masculino</label>
+            <input type="radio" name="sexo" id="isexfem" value="F"><label for="isexfem">Feminino</label>
+        </fieldset>
+    </form>
+    <p>também é possivel deixar uma opção pré marcada se usarmos o elemento checked DENTRO do input desejado</p>
+    <p>outra coisa importantissima para nosso formulário, é botar um valor nos botões radio, caso contrario vai ser enviado um value de sexo="on", par resolver isso é só coloar um value com o retorno necessário </p>
+    <p>checkbox não vai ter esse problema já que ele só envia os valores selecionados</p>
+</body>
+</html>

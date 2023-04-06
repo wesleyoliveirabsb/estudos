@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Color</h1>
+    <p>menos usado mas não menos importante é o input de cor, é um input que permite que o usuário escolha uma cor</p>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <input type="color" name="cor" id="icor"><label for="icor">Cor:</label>
+    </form>
+    <p>se você quiser adicionar algum value para o input color é necessario usar o valor hexadecimal por exemplo: #00ff00</p>
+    <p>esse tipo vai retornar um valor em hexadecimal para o formulário</p>
+    <p>o texto está depois da caixa para lembrar que é importante organizar o html, caso o label estivesse antes do input estária no lugar certo</p>
+    <h1>range</h1>
+    <p>range é um input mais raro mas também usado para saber coisas como, o nivel de satisfação das pessoas em pesquisas</p>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <label for="irange">Nivel de satisfação:</label>
+        <input type="range" name="range" id="irange">
+    </form>
+    <p>como podemos ver o range tem o formato de um slider</p>
+    <p>ele retorna um valor de 0 a 100 ao formulário por padrão mas isso pode ser modificado usando o min e max</p>
+    <h1>file</h1>
+    <p>esse é bastante popular e com certeza você já viu por ai em algum site</p>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <label for="ifile">Escolha a foto de perfil:</label>
+        <input type="file" name="file" id="ifile">
+    </form>
+    <p>é extremamente importante usar o method="post" para esse tipo de controle (envio de arquivos), lembre-se use post sempre que o formulário tiver mais do que 3000bytes</p>
+</body>
+</html>
