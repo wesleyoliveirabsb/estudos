@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elementos sem inputs</title>
+</head>
+<body>
+    <h1>Elementos sem inputs</h1>
+    <p>até agora todos os elementos utilizados foram do tipo input, e são vários deles, mas também existem elementos que não são parte do input, segue abaixo um exemplo prático deles</p>
+    <h2>select</h2>
+    <p>select é aquela caixinha com dropdown geralmente usada para selecionar seu estado mas também pode ser usada em várias outras coisas já que ela é altamente personalizável</p>
+    <p>
+        <label for="iestado">Estado</label>
+        <select name="estado" id="iestado">
+                <option value="SP">São paulo</option>
+                <option value="RJ">Rio de janeiro</option>
+                <option value="MG">Minas Gerais</option>
+           
+
+            <option value="DF">Distrito Federal</option>
+            <option value="GO">Goias</option>
+        </select>
+    </p>
+    <p>uma coisa legal que podemos fazer é agrupar as opções do select utilizando o optgroup, dessa forma vai ser uma lista mais didática e organizada</p>
+    <p>para escolher o nome do optgroup precisamos adicionar o elemento label a ele</p>
+    <p>
+        <label for="iestado">Estado</label>
+        <select name="estado" id="iestado">
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São paulo</option>
+                    <option value="RJ">Rio de janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+           
+
+            <optgroup label="Região Centro-Oeste">
+                <option value="DF">Distrito Federal</option>
+                <option value="GO">Goias</option>
+            </optgroup>
+        </select>
+    </p>
+    <p>também é possivel selecionar uma opção como o ponto inicial, adicionando o element selected a opção desejada caso contrário a opção marcada vai ser a primeira da lista</p>
+    <p>
+        <label for="iestado">Estado</label>
+        <select name="estado" id="iestado">
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São paulo</option>
+                    <option value="RJ">Rio de janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+           
+
+            <optgroup label="Região Centro-Oeste">
+                <option value="DF" selected>Distrito Federal</option>
+                <option value="GO">Goias</option>
+            </optgroup>
+        </select>
+    </p>
+    <h2>Datalist</h2>
+    <p>select é bem útil pra selecionar uma opção de uma lista pré-definida, mas e se você também quiser que, além da lista, o usuário tenha liberdade para escrever sua prórpia opção?</p>
+    <p>para isso vamos utilizar o datalist</p>
+    <p>
+        <label for="iprofissao">Profissão:</label>
+        <input type="text" name="profissao" id="iprofissao" list="listprof">
+        <datalist id="listprof">
+            <option value="ADM">Administrador</option>
+            <option value="PROF">Professor</option>
+            <option value="DEV">Desenvolvedor</option>
+        </datalist>
+    </p>
+    <p>apesar da datalist não ser um tipo de input, ela precisa estar conectada a um, nesse caso, existe um input do tipo text conectado a uma datalist </p>
+    <h2>textarea</h2>
+    <p>as vezes o usuário precisa de um espaço grande para dar feedback ou até mesmo fazer um pedido, o que pode ser feito com textarea, isso vai criar uma região bem grande onde você pode selecionar o tamanho vertical e horizontal </p>
+    <p>
+        <label for="imen">Mensagem:</label><br>
+        <textarea name="men" id="imen" cols="40" rows="10" placeholder="sua mensagem aqui"></textarea>
+    </p>
+    <p>é uma tag bem intuitiva, lembre-se de utilizar o post para essa, pois o get tem limite de 3000 bytes </p>
+</body>
+</html>
