@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+</head>
+<body>
+    <h1>Outputs</h1>
+    <p>além de inputs, o HTML também é capaz de utilizar outputs, essa parte precisa de um pouco mais conhecimento na área de programação, e com javascript</p>
+    <p>por hora utlizaremos uma soma simples</p>
+    <p>
+        <label for="inumero1">Numero 1: </label>
+        <input type="number" name="numero1" id="inumero1" required oninput="isoma.innerHTML = Number(inumero1.value) + Number(inumero2.value) ">
+    </p>
+    <p>
+        <label for="inumero2">Numero 2: </label>
+        <input type="number" name="numero2" id="inumero2" required oninput="isoma.innerHTML=Number(inumero1.value)+ Number(inumero2.value)">
+    </p>
+    <p>
+        <label for="isoma">Soma: </label>
+        <output name="soma" id="isoma">0</output>
+    </p>
+    <h2>Outras utilidades do output</h2>
+    <p>além de somas output pode ser usado para ajudar na acessibilidade do site, como por exemplo, como saber qual o numero que está em um range? <br> Se o range tiver poucos numero é mais fácil mas e se tiver 50? ou mais? output pode ajudar nisso
+    </p>
+    <p>
+        <label for="irange">Numero: </label>
+        <input type="range" name="range" id="irange" value="50" oninput="ivalor.innerHTML=Number(irange.value
+        )">
+        <output id="ivalor">50</output>
+    </p>
+    <p>também é possivel adicionar funções aos outputs</p>
+
+    <p>
+        <label for="iano">Em que ano você nasceu?</label>
+        <input type="number" name="ano" id="iano" max="2023" 
+        oninput="calcIdade()">
+    </p>
+    <p>
+        <label for="iidade">Sua idade é: </label>
+        <output id="iidade">0</output>
+    </p>
+    <script>
+        function calcIdade(){
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>
