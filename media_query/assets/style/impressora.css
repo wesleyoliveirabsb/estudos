@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/*versão impressora*/
+*{
+    padding: 10px;
+    border: 10px;
+}
+h1::before{
+    content: 'esse atigo foi feiot pelo grande willzão o mais foda de todos';
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+ol{
+    display: none;
+}
+article{
+    width: 100%;
+}
